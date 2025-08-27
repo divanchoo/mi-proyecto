@@ -4,5 +4,5 @@
       <li>Sergio Sebastián Divantoque Quintero</li>
       <li>Andres Felipe Wilches Salas</li>
       <li>Marlon Gerardo Alarcon Molina </li>
+  </ul>
 
-    </ul>
