@@ -1,38 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolios</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
-  <title>Protafolios</title>
+  <style>
+    /* --- Reset general --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background: linear-gradient(to right, #f9f9f9, #eef3f7);
+      color: #222;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 4px solid #0073e6;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* --- MAIN --- */
+    main {
+      flex: 1; /* Se expande para ocupar la altura restante */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    nav h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    li {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    li:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    a {
+      display: block;
+      padding: 1.2rem;
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    a:hover {
+      color: #0073e6;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #003366;
+      color: white;
+      border-top: 4px solid #0073e6;
+    }
+
+    footer h3 {
+      margin-bottom: 1rem;
+    }
+
+    footer ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    footer li {
+      background: #0073e6;
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+  </style>
 </head>
-
 <body>
-<header>
-    <h1> Protafolios</h1>
-</header>
+  <header>
+    <h1>Portafolios</h1>
+    <p>Explora los trabajos desarrollados por los estudiantes</p>
+  </header>
 
-<main>
+  <main>
     <nav>
-        <h3>Escoge de quién quieres ver el portafolio</h3>
-        <ul>
-            <li><a href="Portafolios\wilches.html">portafolio de Andres Felipe Wilches Salas</a></li>
-            <li><a href="/contenido/Marlon.html">portafolio de Marlon Gerardo Alarcon Molina</a></li>
-            <li><a href="Portafolios\sergio.html">portafolio de Sergio Sebastián Divantoque Quintero</a></li>
-            <li><a href="Portafolios\sebastian.html">portafolio de Sebastián Alejandro Rincón Burgos</a></li>
-          
-        </ul>
+      <h3>Selecciona un portafolio</h3>
+      <ul>
+        <li><a href="Portafolios/wilches.html">Andres Felipe Wilches Salas</a></li>
+        <li><a href="mi-proyecto/Marlon.html">Marlon Gerardo Alarcon Molina</a></li>
+        <li><a href="Portafolios/sergio.html">Sergio Sebastián Divantoque Quintero</a></li>
+        <li><a href="Portafolios/sebastian.html">Sebastián Alejandro Rincón Burgos</a></li>
+      </ul>
     </nav>
-</main>
   </main>
+
   <footer>
     <h3>Desarrolladores</h3>
     <ul>
-      <li>Sebastián Alejandro Rincó Burgos </li>
+      <li>Sebastián Alejandro Rincón Burgos</li>
       <li>Sergio Sebastián Divantoque Quintero</li>
       <li>Andres Felipe Wilches Salas</li>
-      <li>Marlon Gerardo Alarcon Molina m</li>
-      
+      <li>Marlon Gerardo Alarcon Molina</li>
     </ul>
   </footer>
 </body>
