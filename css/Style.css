@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  color: #333;
+  text-align: center;
+}
+
+/* Encabezado */
+.main-header {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 50px 20px;
+}
+.main-header h1 {
+  margin: 0 0 15px 0;
+  font-size: 2.5em;
+}
+.main-header p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+/* Galería de perfiles */
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.profile {
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+  border-color: #00c6ff;
+}
+
+.profile h3 {
+  margin: 15px 0 5px;
+  font-size: 1.3em;
+  color: #007bff;
+}
+
+.profile p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
