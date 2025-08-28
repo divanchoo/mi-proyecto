@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Columna izquierda */
+.sidebar {
+  background: #0d47a1;
+  color: #fff;
+  padding: 30px;
+  width: 30%;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.sidebar h3 {
+  margin-top: 30px;
+  font-size: 1.1em;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.sidebar li {
+  margin: 8px 0;
+}
+
+/* Columna derecha */
+.content {
+  padding: 40px;
+  width: 70%;
+}
+
+.content h2 {
+  color: #0d47a1;
+  margin-top: 0;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h4 {
+  margin: 0;
+  color: #333;
+}
+
+.job span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.back-home {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-home a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0d47a1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.back-home a:hover {
+  background: #1565c0;
+}
